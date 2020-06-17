@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background: url("./assets/astronauta.png") no-repeat;
+    background-position: 53vw 26vh;
+    background-size: 63vw;
+    background-color: #F2F0F0;
+}
+
+.content {
+    display: grid;
+    gap: 20px;
+    margin: 0 auto;
+    grid-template-rows: 1fr 3fr;    
+    
+    max-width: 1550px;
+   /*margin: 25px auto 0 auto;*/ 
+    width: 96%;
+    height: 100%;
+    
+    
+}
+
+.content header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content header li {
+    list-style: none;
+}
+
+.botao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #546EF8;
+    border-radius:  12px;
+    padding-right: 40px;
+    width: 230px;
+    box-shadow: 3px 5px 5px #546ff84f;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.botao span {
+    background: rgba(39, 72, 237, 0.116);
+    padding: 20px;
+    border-radius: 12px 0 0 12px;
+    margin-right: 20px;
+}
+
+.botao:hover {
+    background-color:#F2F0F0;
+    color: #546EF8;
+    border: 1px solid #546EF8;
+}
+
+.content main {
+    
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 20px 25px 35px;
+    
+}
+
+.content main .apresentacao h1 {
+    color: #546EF8;
+    font-size: 37px;
+    margin-bottom: 30px;
+
+} 
+
+.content main .apresentacao p {
+    width: 80%;
+    font-size: 24px;
+    margin-bottom: 20px;
+
+}
+
+.content main .apresentacao p span {
+    color: #546EF8;
+
+}
+
+.content main .apresentacao .form {
+    width: 80%;
+    display: grid;
+    gap: 25px;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-weight: bold;
+    transition: 1000ms;
+}
+
+.content main .apresentacao .form .label {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    gap: 10px;
+}
+
+.content main .apresentacao .form .label input {
+    background-color: #C1CAF4;
+    border-radius: 12px;
+    border: none;
+    padding: 10px;
+    height: 60px;
+    outline: none;
+    font-size: 15px;
+    color: rgb(94, 93, 93);
+    box-shadow: 3px 3px 2px #546ff89d;
+}
+
+.content main .apresentacao .form a {
+    
+    width: 250px;
+    margin: 15px auto 0 auto;
+    height: 70px;
+
+}
+
+.content main .resultado, .content main .erro {
+    background-color: #d8dffcfb;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.336);
+}
+
+.content main .resultado h1,
+.content main .resultado h2 {
+    color: #546EF8;
+} 
+
+.content main .resultado p {
+    margin-top: 30px;
+}
+
+.content main .erro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.content main .erro img {
+    width: 180px;
+    margin: 0 auto 20px auto;
+}
+
+.content main .erro h2 {
+    color: #546EF8;
+}
